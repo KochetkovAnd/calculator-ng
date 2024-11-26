@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+    box-shadow:4px 4px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px 20px;
+    background-color: #83A49F;
+}
+
+select {
+    margin-left: 20px;
+}
+
+.res {
+    width: 400px;
+    padding: 10px;  
+    margin: 10px 20px;  
+    border-radius: 10px;
+    border: none;   
+    background-color: #83A49F;
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+button {
+    background-color: #323A41;
+    color: #F0ECE9;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}

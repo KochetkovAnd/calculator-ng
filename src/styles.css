@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/* #F0ECE9
+#9FAC99
+#83A49F
+#798392
+#323A41 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: #F0ECE9;
+}

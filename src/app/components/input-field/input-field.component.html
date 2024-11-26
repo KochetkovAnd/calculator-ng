@@ -1,0 +1,18 @@
+<div class="contaner">
+    <div>
+        <label for="input">Введите число:</label>
+        <input 
+          id="input"
+          #inputField
+          type="text"
+          [(ngModel)]= "value"
+          (input)="validateInput()"
+        />
+    </div>
+    <div>
+        <label for="base">Система счисления:</label>
+        <select id="base" [(ngModel)]="base" (change)="updateBase()">
+          <option *ngFor="let base of bases" value="{{base.value}}">{{base.text}}</option>
+        </select>
+    </div>
+</div>
