@@ -1,11 +1,11 @@
 
-<input-field (valueChange)="setNum1($event)" (operation)="this.operation" ></input-field>
-<select [(ngModel)]="this.operation">
+<input-field (valueChange)="setNum1($event)" (operation)="this.operation" id = "first-input"></input-field>
+<select [(ngModel)]="this.operation" id = "operation">
     <option *ngFor="let operation of operations" value="{{operation.name}}">{{operation.text}}</option>        
 </select>
-<input-field (valueChange)="setNum2($event)" [operation]="this.operation"></input-field>
-<div class="res" [appResultColor]="res">
-    <button (click)="calc()" >Посчитать</button>
+<input-field (valueChange)="setNum2($event)" [operation]="this.operation" id = "second-input"></input-field>
+<div class="res" [appResultColor]="res" id="res-block">
+    <button (click)="calc()" id="res-button">Посчитать</button>
     Результат: {{ res | round:3 }}
 </div>
 
