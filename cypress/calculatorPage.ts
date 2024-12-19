@@ -3,9 +3,17 @@ export class CalculatorPage {
     getFirstInput() {
       return cy.get('#first-input input');
     }
+
+    getFirstBase() {
+      return cy.get('#first-input select');
+    }
   
     getSecondInput() {
       return cy.get('#second-input input');
+    }
+
+    getSecondBase() {
+      return cy.get('#second-input select');
     }
   
     getOperationDropdown() {
@@ -18,5 +26,9 @@ export class CalculatorPage {
   
     getResultButton() {
       return cy.get('#res-button');
+    }
+
+    getResultText() {
+      return cy.get('#res-block p');
     }
 }
